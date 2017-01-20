@@ -1,0 +1,48 @@
+function: each input related to exactly one output
+
+lambda terms: expressions, variables, abstractions
+
+expressions = variables + abstractions
+
+variables have no meaning or value! just names for potential inputs
+
+abstraction = lambda function = lamdba arg. body
+
+alpha equivalence = arg variable names can be changed on demand. 
+
+beta reduction = applying a term to an argument; replacing bound variables
+                 with the value of the argument, and eliminating the head
+
+We can also apply a lambda funtion to another lambda abstraction:
+
+(lambda x.x)(lambda y.y)
+[x := (lambda y.y)]
+(lambda y.y)
+
+Lambda calculus is left associative.
+
+free variables = variables in the body expression which are not named
+                 in the head. Free variables are not alpha-equivalent.
+
+multiple agrs? only lambda can only bind one parameter and can accept only
+one argument. multiple args == multiple nested head.
+   Moses Schonfinkel, Haskell Curry == currying
+
+   lambda xy.xy    is lambda x.(lambda y.xy)
+
+note:
+   lambda z.(lambda n.z)(...) equals to lambda z.z
+
+beta normal form = cannot be beta reduced
+
+combinator = lambda without free variables (combines the args)
+
+(per se == by itself)
+
+divergence = the reduction process never terminates. A famous example
+is omega:
+
+(lambda x.xx)(lambda x.xx)
+[ x:= (lambda x.xx) ]
+(lambda x.xx)(lambda x.xx)
+
