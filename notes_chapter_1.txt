@@ -12,6 +12,7 @@ alpha equivalence = arg variable names can be changed on demand.
 
 beta reduction = applying a term to an argument; replacing bound variables
                  with the value of the argument, and eliminating the head
+ - (lambda x. ~1~)(~2~) -> ~2~ is substituted in ~1~ as x.
 
 We can also apply a lambda funtion to another lambda abstraction:
 
@@ -30,8 +31,14 @@ one argument. multiple args == multiple nested head.
 
    lambda xy.xy    is lambda x.(lambda y.xy)
 
-note:
-   lambda z.(lambda n.z)(...) equals to lambda z.z
+Notes, some identities:
+-----------------------
+ - (lambda z.a) === a ( which is a free variable)
+ - (lambda z.a)(...) === a.
+ - lambda z.(lambda n.z)(...) === lambda z.z
+ - (lambda a.a)(...) === ..., identity function in front doesn't change the game
+ - BUT (~1~)(lambda a.a)(~2~) =/= (~1~)(~2~) in general
+ - (lambda x.xx)(...) === (...)(...)
 
 beta normal form = cannot be beta reduced
 
@@ -46,3 +53,26 @@ is omega:
 [ x:= (lambda x.xx) ]
 (lambda x.xx)(lambda x.xx)
 
+
+Notes:
+------
+ - Parentheses are written because of left-associativity. And parantheses
+   matter:
+    - lambda y.(lambda z.~1~)(~2~) =/= (lambda y.(lambda z.~1~))(~2~)
+      in general
+ - The order of evaluation matters.
+    - (lambda xy.xy)(lambda x.x)z =/= (lambda xy.xy)z,
+   It seems it is illegal starting the evaluation 'from inside'
+   (exercise 5 from beta reduce set).
+
+Definitions:
+------------
+1. lambda: introduces arguments for binding in an expression.
+2. lambda abstraction === anonymous function
+3. application === beta reduction
+4. lambda calculus === formal system for expressing programs in abstraction +
+                       application.
+5. normal order === common evaluation strategy in lambda calculi,
+                    evaluating the leftmost outermost lambda first, nested
+                    evaluation only if running out arguments outside. 
+                    NORMAL ORDER IS NOT HOW HASKELL CODE IS EVALUATED!
