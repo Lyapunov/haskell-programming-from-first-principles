@@ -7,7 +7,7 @@ evaluation = reduction = normalizing = executing
 
 -------
 
-expressions
+expressions:
  - functions : - for a specific input always the same result
                - one argument. (More arguments via currying.)
 
@@ -15,7 +15,7 @@ expressions
                in soure: quadro x = x * 4
                          name, head, =, body
  
-Conventions
+conventions:
 
    capitalization matters!!!
     - modules and types start with capital.
@@ -28,10 +28,18 @@ Conventions
    arguments to functions x, y, z, x1 ...
    list of x is xs (plural form), (x:xs)
 
-identity function, id, returns whatever value is given
+identity function: id, returns whatever value is given
 
 operators: functions that can be used in infix style, functions are
    prefix by the default
    see :info ^, :info triple, infixr!
 
-!!!use spaces for indentation!!!
+whitespaces:
+   !!!use spaces for indentation!!!
+   - whitespaces can make the code more conscious
+   - indentation is important and often replaces syntactic markers
+   - groups should be indended at the same level
+       let x = 3
+         z = 3    ---> GHCI will complain about this!!! won't run!!!
+
+
