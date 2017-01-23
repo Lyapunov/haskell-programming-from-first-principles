@@ -47,4 +47,4 @@ arithmetic functions:
    - mod vs. rem
        mod (-12) 7 =/= rem (-12) 7 (2 vs. -5)
        5 `mod` (-3) =/= 5 `rem` (-3)
-
+   - 5 + -3 is not good, 5 + (-3) is. Unary - is syntactic sugar.
