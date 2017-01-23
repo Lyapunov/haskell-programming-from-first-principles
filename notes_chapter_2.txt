@@ -15,7 +15,16 @@ expressions
                in soure: quadro x = x * 4
                          name, head, =, body
  
-   capitalization matters!!! modules and types start with capital.
+Conventions
+
+   capitalization matters!!!
+    - modules and types start with capital.
+    - functions start with lowercase letter
    Haskell likes camelCase
 
+   type variables a,b,c..
+   functions can be used as arguments: f, g, f1 ...
+   variables do not have to be a single letter, though they often are
+   arguments to functions x, y, z, x1 ...
+   list of x is xs (plural form), (x:xs)
 
