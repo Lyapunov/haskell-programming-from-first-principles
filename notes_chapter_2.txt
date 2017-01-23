@@ -4,3 +4,18 @@ Normal form -- irreducible!
 redexes : reducible expressions.
 
 evaluation = reduction = normalizing = executing
+
+-------
+
+expressions
+ - functions : - for a specific input always the same result
+               - one argument. (More arguments via currying.)
+
+   definition, in ghci : let quadro x = x * 4
+               in soure: quadro x = x * 4
+                         name, head, =, body
+ 
+   capitalization matters!!! modules and types start with capital.
+   Haskell likes camelCase
+
+
