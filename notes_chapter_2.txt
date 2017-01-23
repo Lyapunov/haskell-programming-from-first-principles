@@ -38,8 +38,13 @@ whitespaces:
    !!!use spaces for indentation!!!
    - whitespaces can make the code more conscious
    - indentation is important and often replaces syntactic markers
-   - groups should be indended at the same level
+   - groups should be indended and should be indented at the same level
        let x = 3
          z = 3    ---> GHCI will complain about this!!! won't run!!!
-
+   - !!!study indentation patterns carefully!!!
+   
+arithmetic functions:
+   - mod vs. rem
+       mod (-12) 7 =/= rem (-12) 7 (2 vs. -5)
+       5 `mod` (-3) =/= 5 `rem` (-3)
 
