@@ -1,0 +1,6 @@
+Normal form -- irreducible!
+
+1 + 1 is not irreducible, 2 is irreducible.
+redexes : reducible expressions.
+
+evaluation = reduction = normalizing = executing
