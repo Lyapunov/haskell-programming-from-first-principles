@@ -60,5 +60,12 @@ Parenthesing infix functions
 
     - is an exception because of negation, overloading is troublesome
 
-page 77 - evaluation
+Evaluation
+   - reducing reducible expressions until it is irreducible
+   - lazy evaluation
+     applications == reducible
+     value == finished, irreducible
 
+let vs. where
+   - are for introducing names for expressions
+   - see FunctionWithWhere.hs vs FunctionWithLet.hs
