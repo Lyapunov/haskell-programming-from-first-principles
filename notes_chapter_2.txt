@@ -69,3 +69,7 @@ Evaluation
 let vs. where
    - are for introducing names for expressions
    - see FunctionWithWhere.hs vs FunctionWithLet.hs
+   - REPL cannot keep two modules loaded simultaneusly
+   - lambda x.x === (\x -> x) in Haskell (identity)
+
+page 82
