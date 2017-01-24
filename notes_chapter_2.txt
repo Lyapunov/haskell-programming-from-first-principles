@@ -51,3 +51,15 @@ arithmetic functions:
      negate vs. subtract
 
 page 75
+
+Parenthesing infix functions
+    (+) is referring function + as a value
+    (+1) the same addition function but with one argument applied
+
+    > 1 + 2
+    > (+) 1 2
+    > (+1) 2  ---> sectioning!
+
+    - is an exception because of negation, overloading is troublesome
+
+
