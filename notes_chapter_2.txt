@@ -50,8 +50,6 @@ arithmetic functions:
    - 5 + -3 is not good, 5 + (-3) is. Unary - is syntactic sugar.
      negate vs. subtract
 
-page 75
-
 Parenthesing infix functions
     (+) is referring function + as a value
     (+1) the same addition function but with one argument applied
@@ -62,4 +60,5 @@ Parenthesing infix functions
 
     - is an exception because of negation, overloading is troublesome
 
+page 77 - evaluation
 
