@@ -68,8 +68,25 @@ Evaluation
 
 let vs. where
    - are for introducing names for expressions
+   - let ... in ... is an expression. where is bound to surrounding
+     syntactic construct!
    - see FunctionWithWhere.hs vs FunctionWithLet.hs
-   - REPL cannot keep two modules loaded simultaneusly
-   - lambda x.x === (\x -> x) in Haskell (identity)
+      - REPL cannot keep two modules loaded simultaneusly
+      - lambda x.x === (\x -> x) in Haskell (identity)
+      - let x = a in y(x) === y(x) where x = a === (\x -> y(x)) a
 
-page 82
+Chapter exercises:
+
+   ($): definition of $ is, which is an infix operator with lowest
+        possible precedence:
+        f $ a = f a
+        "evaluate everything to the right of me first."
+
+   Interesting:
+       (*2)(2+2) works (because it is function + argument)
+       (2+2)(*2) doesn't work, (2+2) is not a function!
+
+   Order of expressoins matters in source file, but in REPL it doesn't
+   matter.
+
+Page 88
