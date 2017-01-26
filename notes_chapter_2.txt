@@ -89,4 +89,17 @@ Chapter exercises:
    Order of expressoins matters in source file, but in REPL it doesn't
    matter.
 
-Page 88
+Definitions:
+   - parameter - formal params in a type signature
+   - argument  - input value the function is applied to
+   - expression - well structured combination of constants, variables
+                  and functions. Usually it does not refer to irreducible
+                  expressions.
+   - redex - reducible expression
+   - value - irreducible expression
+   - function ~ mapping
+   - infix notation - operator is placed between arguments
+   - operators - by default infix functions
+   - syntactic sugar - designed to make expressions easier to write and
+                       read.
+
