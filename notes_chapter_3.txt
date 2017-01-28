@@ -1,0 +1,15 @@
+Char: character
+String: list of characters
+
+try:
+ :type 'a'
+ :type "hello"
+
+:: is a type signature,
+  --->'a' :: Char, a has a type of Char
+  [] is the syntactic sugar for list
+    here [Char] is list of Char.
+
+Printing
+   print    -> keeps quotation marks
+   putStrLn -> ordinary print
