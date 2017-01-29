@@ -14,3 +14,8 @@ Printing
    print    -> keeps quotation marks
    putStr
    putStrLn -> ordinary print
+
+> :l something.hs
+> main
+
+Page 93
