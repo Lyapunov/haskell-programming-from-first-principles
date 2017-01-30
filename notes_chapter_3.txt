@@ -51,6 +51,8 @@ More list functions:
             number of elements
 
  - !! indexing function. 0 is the first index
+      "abcde" !! 3 === "d"
+      "abcde" !! 100 == syntax error
 
 Page 103
 
