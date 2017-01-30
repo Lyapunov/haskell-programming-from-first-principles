@@ -19,11 +19,17 @@ Printing
 > main
 
 IO == eye-oh
-Concatenation: link together
+Concatenation:
+   - link together
+      - (++) -infix, two list
+      - concat - concats lists in a list 
+
 
 (++) :: [a] -> [a] -> [a]
 [a] -> a is polymorphic, any type can be
 
 
+where, let : creates local binding which is not 
+             visible at the top level
 
-Page 98
+Page 101
