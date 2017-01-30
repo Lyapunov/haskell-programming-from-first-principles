@@ -32,4 +32,26 @@ Concatenation:
 where, let : creates local binding which is not 
              visible at the top level
 
+:t ---> type
+:m ---> unload module
+
+More list functions:
+ - : (cons) operator
+      'a' : 'b' === syntax error
+      'a' : []  === "a"
+      'a' : 'b' : "abba" === "ababba"
+
+ - head === the first item of the list
+
+ - tail === the list with the head chopped off
+
+ - take === returns the specified number of elements
+
+ - drop === returns the list after dropping the specified
+            number of elements
+
+ - !! indexing function. 0 is the first index
+
 Page 101
+
+
