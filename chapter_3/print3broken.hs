@@ -1,13 +1,13 @@
 -- print3broken
 module Print3Broken where
 
+greeting = "Yarrrrr"
+
 printSecond :: IO ()
 printSecond = do
    putStrLn greeting
-   where greeting = "Yarrrrr"
 
 main :: IO ()
 main = do
    putStrLn greeting
    printSecond
-   where greeting = "Yarrrrr"
