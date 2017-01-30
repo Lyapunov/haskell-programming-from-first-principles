@@ -54,6 +54,15 @@ More list functions:
       "abcde" !! 3 === "d"
       "abcde" !! 100 == syntax error
 
-Page 103
-
+Definitions:
+ - string === sequence of characters (linked-list of Chars)
+ - type === classification of values
+ - concatenation === joining together value sequences
+ - Scope === where a variable referred by name is valid
+             (=== visible)
+ - local bindings in a module === cannot be imported by 
+      other programs and modules
+ - global (top level) bindings === visible to all code
+      within the module and can be imported from outside
+ - data structures === a way to organize data
 
