@@ -1,0 +1,11 @@
+Data declaration
+----------------
+type level vs. term level (types vs. values)
+
+data Bool = False | True
+---  1.     2. 
+
+1. type constructor, the capitalized name of the type
+2. pipe separated date constructors
+
+See :i not vs. not True
