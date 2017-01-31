@@ -9,3 +9,14 @@ data Bool = False | True
 2. pipe separated date constructors
 
 See :i not vs. not True
+
+Numeric types
+-------------
+Integral numbers: Int (fixed precision) vs. Integer (arbitrary large)
+Fractional: Float (single precision), Double (double precision),
+            Rational (arbitrary precise but not efficient),
+            Scientific (space-efficient and almost arbitrary precise;
+                        coefficient is Integer, exponent is Int)
+Num is the superclass all of these
+
+Page 113
