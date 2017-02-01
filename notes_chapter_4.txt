@@ -5,8 +5,8 @@ type level vs. term level (types vs. values)
 data Bool = False | True
 ---  1.     2. 
 
-1. type constructor, the capitalized name of the type
-2. pipe separated date constructors
+1. type constructor, the ==capitalized== name of the type
+2. pipe separated date constructors, also ==capitalized==!
 
 See :i not vs. not True
 
@@ -21,10 +21,29 @@ Num is the superclass all of these
 
 import GHC.Int -> Int8, Int16, Int32, Int64 - n bit precision
 
-See :i (/) or :t (/) - (/) works with as having the 'Fractional'
-                       constraint 
+See :i (/) or :t (/) - (/) works with a instances having the
+                      'Fractional' constraint! 
 
 Comparing values:
 > let x = 5
 > x == 15, x < 17, x > 13, x /= 14
-Page 113
+
+Constraints again: == requires Eq, < requires Ord.
+
+Comparsions work on strings. It is implied by the list comparsion and
+Char comparsion!!! Not an independent mechanism!!!
+
+Bools:
+6 different entites have names in Haskell.
+   Term-level: values live and executing code during the run of program
+               - 1. variables
+               - 2. data constructors
+   Type-level: for static analysis and verification
+               - 3. type variables
+               - 4. type constructors
+               - 5. typeclasses
+               - 6. modules
+
+   
+
+Page 121
