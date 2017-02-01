@@ -44,6 +44,13 @@ Bools:
                - 5. typeclasses
                - 6. modules
 
-   
+Ifs:
+Haskell doesn't have if statements, but it has if expressions.
 
-Page 121
+   if True then "Mom" else "Dad"
+
+after the if, there must be a Bool (expression). The two branches 
+must have compatible type, e.g.
+   if False then 1.2 else 2 :: Rational
+
+Page 123
