@@ -50,7 +50,7 @@ Haskell doesn't have if statements, but it has if expressions.
    if True then "Mom" else "Dad"
 
 after the if, there must be a Bool (expression). The two branches 
-must have compatible type, e.g.
+must have compatible types, e.g.
    if False then 1.2 else 2 :: Rational
 
 Page 123
