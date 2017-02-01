@@ -19,6 +19,12 @@ Fractional: Float (single precision), Double (double precision),
                         coefficient is Integer, exponent is Int)
 Num is the superclass all of these
 
-import GHC.Int -> Int8, Int16, Int32, Int64
+import GHC.Int -> Int8, Int16, Int32, Int64 - n bit precision
 
+See :i (/) or :t (/) - (/) works with as having the 'Fractional'
+                       constraint 
+
+Comparing values:
+> let x = 5
+> x == 15, x < 17, x > 13, x /= 14
 Page 113
