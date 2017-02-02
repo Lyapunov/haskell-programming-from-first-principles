@@ -53,4 +53,28 @@ after the if, there must be a Bool (expression). The two branches
 must have compatible types, e.g.
    if False then 1.2 else 2 :: Rational
 
-Page 123
+---
+
+Storing multiple values within a single value: tuples and lists.
+
+Tuples:
+ - fixed number of constituents (pair, triple, four-tuple...)
+   === fixed arity
+ - fst and snd, only for pair! 
+ - swap in Data.Tuple
+ - using larger tuples than 5-tuples is insane
+
+Difference between tuples & lists
+ 1. list costituents must have the same type
+ 2. they have different syntax, () vs []
+ 3. list size can change, tuple arity cannot
+
+Lists:
+ - we've already seen some operations ((++) and concat and length)
+
+---
+
+why 6 / ( 3 :: Int ) doesn't work? -> cannot div with int
+`div`, `quot` works!
+
+Page 128
