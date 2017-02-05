@@ -37,4 +37,10 @@ Type signature of functions? Example:
         data (,) a b = (,) a b
 
 Type signatures in GHC 7.10:
+   old: [a] -> Int
+   new: Foldable t => t a -> Int
 
+        !!polymorphism!! not just for lists, but for all
+        instances of the Foldable (type)class. 
+
+Page 143
