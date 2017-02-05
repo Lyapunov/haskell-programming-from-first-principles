@@ -1,0 +1,40 @@
+Chapter 5: Types
+
+- Every value (irreducible expression) has a type.
+- In Haskell, there is no untyped data
+  -> every data ordinates in a data ctor from a typedef!
+
+Strong typing == not allowing cetrain errors
+Static typing == types are known at compile time
+
+Type inference -> deducing types of untyped variables
+                  from expressions.
+
+Command :t is :type!
+
+    :t True ---> True :: Bool
+but :t 13   ---> 13 :: Num a => a
+                       what is it? polymorphic value!
+
+Type signature of functions? Example:
+    :t not
+    not :: Bool -> Bool
+
+-> : arrow, type constructor for functions.
+
+     Yes, it is also a type ctor like Bool, but it
+     takes arguments and has no data ctors:
+        :i Bool
+        data Bool = False | True
+
+        :i (->)
+        data (->) a b
+     Since it has no data ctors, the value of type
+     is the function! Functions are values!!!
+
+,  : type ctor for two-tuple, similar:
+        :i (,)
+        data (,) a b = (,) a b
+
+Type signatures in GHC 7.10:
+
