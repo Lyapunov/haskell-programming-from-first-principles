@@ -87,4 +87,30 @@ NOTE: type checking for unimplemented functions
    > let x :: Char; x = undefined
    > :t f x
 
-Page 153
+Polymorphism:
+   -ic: "made of many form"
+   - Two forms: parametric (== unconstrainted == fully)
+                vs. constrainted
+
+     constraining : making the number of possible good
+         types narrower, but the allowed operations wider
+
+     lowercase in type sygnature: polymorphic
+     uppercase : specific
+
+     e.g. identity function, id :: a -> a
+        maximally polymorphic, minimally active!
+
+     btw. id is the only a -> a function.
+          there are only two a->a->a functions.
+
+Polymorphic constants:
+   - Numeric literals, e.g.
+     (-10) can be any numeric type (and 6.3 cannot)
+     5 :: Int makes us more specific!
+
+   - Fixing the infamous 6 / length [2,3,4] example:
+     > 6 / fromIntegral( length [2,3,4] )
+     works!
+
+Page 158
