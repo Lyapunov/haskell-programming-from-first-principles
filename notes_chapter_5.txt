@@ -47,6 +47,12 @@ Type signatures with multiple typeclasses:
    (Num a, Num b) => a -> b -> b
 
    - no other argument, don't appear like a tuple at value,term
-     level, !!!just multiple constraints!!!
+     level, !!!just multiple (typeclass) constraints!!!
+
+Currying:
+   lambda expressions with multiple parameters
+      == just nested lambdas
+
+
 
 Page 143
