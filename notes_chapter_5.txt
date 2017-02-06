@@ -53,6 +53,15 @@ Currying:
    lambda expressions with multiple parameters
       == just nested lambdas
 
+      fff :: Integer -> Integer -> Integer
+      fff :: Integer -> ( Integer -> Integer )
+             ~~~~~~~~~~~~~
+                 the function takes a number, and returns
+                 an other function -- PARTIAL APPLICATION!
+     
+      Remember:
+         lam xy.~~ = lam x.(lam y.~~)
+         f(x,y) = (f'(x))(y)          ~~~~ hard to imagine
 
 
 Page 143
