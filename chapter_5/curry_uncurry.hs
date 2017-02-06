@@ -1,8 +1,8 @@
 module CurryUncurry where
 
 nonsense :: Bool -> Integer
-nonsense True = 805
-nonsense False = 31337
+nonsense True = 666
+nonsense False = 10000
 
 typicalCurriedFunction :: Integer -> Bool -> Integer
 typicalCurriedFunction i b = i + (nonsense b)
@@ -17,3 +17,6 @@ anonymous = \i b -> i + (nonsense b)
 anonymousAndManuallyNested :: Integer -> Bool -> Integer
 anonymousAndManuallyNested = \i -> \b -> i + (nonsense b)
 
+-- manual nesting again
+myCurry :: Integer -> Integer -> Bool
+myCurry = \x -> \y -> x `mod` 2 == y `mod` 2

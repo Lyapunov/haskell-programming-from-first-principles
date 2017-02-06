@@ -72,4 +72,12 @@ Currying:
                     a -> String
        f(x,y,z)=((f'(x))(y))(z)
 
+Uncurrying:
+     uncurried - 1 function, more arguments in a tuple
+     curried   - many functions, 1 argument for each
+
+     automatic vs. manual nesting in curry_uncurry.hs!
+
+     
+
 Page 149
