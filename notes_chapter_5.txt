@@ -43,4 +43,10 @@ Type signatures in GHC 7.10:
         !!polymorphism!! not just for lists, but for all
         instances of the Foldable (type)class. 
 
+Type signatures with multiple typeclasses:
+   (Num a, Num b) => a -> b -> b
+
+   - no other argument, don't appear like a tuple at value,term
+     level, !!!just multiple constraints!!!
+
 Page 143
