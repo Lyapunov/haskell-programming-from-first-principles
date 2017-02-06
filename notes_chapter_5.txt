@@ -117,4 +117,11 @@ Type inference:
    - Although compiler has the ability to deduce the type, good practice to
      declare all types explicitly.
 
-Page 158
+Asserting types for declarations:
+   - Adding type signatures to the code allows the compiler to figure
+     out what is wrong.
+   - Possible but uncommon declare types locally with let and where
+     clauses.
+
+
+Page 164
