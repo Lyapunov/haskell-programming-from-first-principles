@@ -127,6 +127,4 @@ Note: type signature
     f :: [f] -> f is valid, f doesn't refer to the function but a fully
          polymorphic type
 
-Page 166
-
-
+Page 168
