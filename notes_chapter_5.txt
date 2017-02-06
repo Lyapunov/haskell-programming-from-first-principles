@@ -63,5 +63,13 @@ Currying:
          lam xy.~~ = lam x.(lam y.~~)
          f(x,y) = (f'(x))(y)          ~~~~ hard to imagine
 
+  Another example, in blah.hs
+       blah :: a -> a -> a -> String
+       blah x y z = "Blah"
 
-Page 143
+       a -> ( a ->  a -> String )
+              a -> (a -> String )
+                    a -> String
+       f(x,y,z)=((f'(x))(y))(z)
+
+Page 149
