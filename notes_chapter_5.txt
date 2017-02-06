@@ -114,6 +114,7 @@ Polymorphic constants:
      works!
 
 Type inference:
-   - Good practice to declare all types explicitly.
+   - Although compiler has the ability to deduce the type, good practice to
+     declare all types explicitly.
 
 Page 158
