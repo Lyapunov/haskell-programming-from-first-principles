@@ -78,6 +78,13 @@ Uncurrying:
 
      automatic vs. manual nesting in curry_uncurry.hs!
 
-     
+Currying and uncurrying existing functions:
+     for 2 arg functions:
+        curry fst vs. uncurry (+)
 
-Page 149
+NOTE: type checking for unimplemented functions
+   > let f :: a -> a -> a; f = undefined
+   > let x :: Char; x = undefined
+   > :t f x
+
+Page 153
