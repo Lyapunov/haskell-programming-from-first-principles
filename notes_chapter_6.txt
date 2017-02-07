@@ -15,6 +15,40 @@ will examine typeclases Eq, Ord, Show
 
 Note that logically (and practically) Enum -> Ord -> Eq
 
-Page 179
+Eq:
+   (1,'a')==(2,'b') is a valid expression
+   (1,'a')==('a',1) is invalid
 
+A tuple is Eq only if its members are Eq:
+   instance (Eq a, Eq b) => Eq (a, b)
 
+Num:
+   (+),(*),(-),negate,abs,signum,fromInteger
+
+Integral:
+   Num -> Real ->
+          Enum -> Integral
+
+   Typeclass inheritance!
+      Real cannot override the method of Nums, so there is
+      no deadly diamond.
+
+   E.g. class (Num a) => Fractional a where 
+        ...
+
+Type-defaulting typeclasses:
+   Resolving polymorphic value for evaluation!
+
+   concrete type must have an instance for all required typeclasses.
+
+   E.g.:
+      default Num Integer
+      default Fractional Double
+
+   :: can assign a more specific type, e.g. 5 :: Int
+
+   !!!Types can be made more specific, but not more general!!!
+
+(Haskell report -> the standard that specifies the language.)
+
+Page 186
