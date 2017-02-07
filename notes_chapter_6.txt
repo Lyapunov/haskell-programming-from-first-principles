@@ -1,0 +1,18 @@
+Typeclasses
+
+Type about how to create, typeclass about how to consume.
+"interfaces". constrainted (ad-hoc) polymorphism.
+
+See these lines:
+
+:info X
+...
+instance ~~~
+instance ~~~
+...
+
+will examine typeclases Eq, Ord, Show
+
+Note that logically (and practically) Enum -> Ord -> Eq
+
+
