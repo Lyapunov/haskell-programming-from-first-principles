@@ -90,7 +90,7 @@ NOTE: type checking for unimplemented functions
 Polymorphism:
    -ic: "made of many form"
    - Two forms: parametric (== unconstrainted == fully)
-                vs. constrainted
+                vs. constrainted (== ad-hoc)
 
      constraining : making the number of possible good
          types narrower, but the allowed operations wider
@@ -127,4 +127,17 @@ Note: type signature
     f :: [f] -> f is valid, f doesn't refer to the function but a fully
          polymorphic type
 
-Page 168
+!!!!Composition of three!!!!
+    mungle :: (x -> y) -> (y -> (w,z)) -> x -> w; mungle f1 f2 = fst . f2 . f1
+
+Definitions:
+------------
+   - Polymorphism -- type variables which may refer more than one concrete type.
+   - Principal type -- in Haskell the most generic type that still typechecks
+   - Type inference -- in Haskell and ML, deducing principal type
+   - Type variable -- a way to refer to an unspecified type
+   - Typeclass - interfaces that multiple datatypes may have in common
+   - Parametricity - behaviour will be uniform across all concrete applications
+                     of the function
+   - Ad-hoc polymorphism - different behaviour of the same function for each
+                           instance. 
