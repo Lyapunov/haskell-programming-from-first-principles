@@ -51,4 +51,49 @@ Type-defaulting typeclasses:
 
 (Haskell report -> the standard that specifies the language.)
 
-Page 186
+Ord:
+   can be put in order.
+   - compare, min, max, <, >, <=, >=
+
+Enum:
+   each element has a predessor and a successor
+   - succ, pred, ... enumFromTo, enumFromThenTo
+   - enumFromTo 'a' 'k' == "abcdefghijk"
+
+Show:
+   - the purpose is human readibility, not serialization!
+   - show 2323 converts the number to string!
+   - printing itself is a side effect
+        Haskell handles effectfull computation in a special way.
+   - IO() is obligatory type of main, because main produces only 
+     side effects. The () (the unit, the empty touple) is for the
+     main return value.
+
+Type deriving:
+   - magically deriving typeclass instances, e.g.
+       > data Mood = Blah deriving Show
+       > Blah
+
+read:
+   - takes strings and turn them into things.
+   - the problem is that read is a partial function, it does not
+     return proper value for all possible inputs.
+     Example: read "Blah" :: Integer doesn't make sense.
+
+Eq instances:
+   - Keyword instance is for declarint typeclass instances
+      instance <typeclass> <type> where Trivial' == Trivial' = True
+                                  ~~~~~
+                                   separator between declaration and functions
+                                        ---------------------------
+                                           infix notation for defining the function
+                                           on a pair of args
+
+Partial functions:
+   - What if in chapter_6/day_of_week.hs, we forgot the unconditional case
+     in the Eq DayOfWeek instance? ( the fallback case).
+     - exception arise when Mon == Wed.
+     - :set -Wall
+       may help, you'll get the 'pattern match(es) are non-exhaustive' warning.
+
+Page 204
