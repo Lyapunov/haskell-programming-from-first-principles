@@ -96,4 +96,6 @@ Partial functions:
      - :set -Wall
        may help, you'll get the 'pattern match(es) are non-exhaustive' warning.
 
-Page 204
+typeclasses in intance declaration - see identity!
+
+Page 206
