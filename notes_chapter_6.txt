@@ -115,4 +115,4 @@ Concrete types imply all the typeclasses they provide
      practice
 
 
-Page 215
+Page 216
