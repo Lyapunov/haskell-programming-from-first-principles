@@ -98,4 +98,21 @@ Partial functions:
 
 typeclasses in intance declaration - see identity!
 
-Page 206
+Ord instances:
+   - think of deriving (Ord,Eq,Show)
+   - an Ord instance should be
+      - consistent with Eq. x == y => compare x y is EQ
+      - covering all the cases, not just partial ordering
+      - compare x y = LT => compare y x = GT
+
+Ord implies Eq:
+   - Eq is a superclass of Ord.
+
+Concrete types imply all the typeclasses they provide
+   - A concrete type either has the typeclass or hasn't - adding the constraint
+     won't help.
+   - using just enough typeclasses instead of concrete types is a good
+     practice
+
+
+Page 215
