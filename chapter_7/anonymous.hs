@@ -18,4 +18,4 @@ addOneIfOdd n = case odd n of
   False -> n
   where f = \n -> n + 1
 
-addFive x y = ( if x > y then y else x ) + 5
+addFive = \x -> \y -> ( if x > y then y else x ) + 5
