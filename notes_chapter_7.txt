@@ -35,5 +35,23 @@ Pattern matching:
  - if patterns don't cover all possible cases
     -> partial functions, may cause exceptions!!!
    use :set -Wall to detect them!
+ - Ideas:
+     - defining a function case by case
+     - unpacking datatypes
 
-Page 231
+Pattern matching tuples:
+ - pattern match also works for tuples, it makes life easier.
+
+Case expressions:
+ - func verdictOfMoneyBalance x =
+      case x > 1000 of
+         True -> "Great"
+         False -> "Not so great"
+
+Higher-order functions:
+ - functions which take other function(s) as argument(s)
+ - flip is a simple example. Eg.
+   compare 5 4
+   vs. (flip compare) 5 4
+
+Page 245
