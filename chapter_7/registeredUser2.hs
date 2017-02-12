@@ -16,3 +16,4 @@ printUser ( RegisteredUser (Username name)
           = putStrLn $ name ++ " " ++ show number
 
 -- > printUser ( RegisteredUser (Username "hello") (AccountNumber 23) )
+-- > printUser UnregisteredUser
