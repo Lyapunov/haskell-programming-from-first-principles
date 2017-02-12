@@ -30,5 +30,10 @@ Pattern matching:
    to the next available pattern.
  - pattern matching proceeds left to right and outside to
    inside.
+ - try to order your patterns from most specific to least
+   specific.
+ - if patterns don't cover all possible cases
+    -> partial functions, may cause exceptions!!!
+   use :set -Wall to detect them!
 
-Page 229
+Page 231
