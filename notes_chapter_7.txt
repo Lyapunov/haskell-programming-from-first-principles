@@ -20,6 +20,8 @@ Anonymous functions:
    Try (\x -> x* 3) 1
    And (\x -> \y -> x + y) 5 3
 
+Note: ghci block syntax: :{ and :}
+
 Pattern matching:
  - patterns match  unified variables, numeric literals,
    list syntax. (On any and all data ctors.)
