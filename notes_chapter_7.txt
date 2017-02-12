@@ -15,8 +15,18 @@ Shadowing;
    !!! x will be 10 !!!
 
 Anonymous functions:
-  - Lambda syntax, backslash in the front of x
-      (\x -> x * 3) :: Integer -> Integer
-    Try (\x -> x* 3) 1
+ - Lambda syntax, backslash in the front of x
+     (\x -> x * 3) :: Integer -> Integer
+   Try (\x -> x* 3) 1
+   And (\x -> \y -> x + y) 5 3
 
-Page 228
+Pattern matching:
+ - patterns match  unified variables, numeric literals,
+   list syntax. (On any and all data ctors.)
+ - agaist variables, not types!
+ - having a set of patterns, if one fails, proceeding 
+   to the next available pattern.
+ - pattern matching proceeds left to right and outside to
+   inside.
+
+Page 229
