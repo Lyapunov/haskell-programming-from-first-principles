@@ -16,4 +16,4 @@ mthi4 = \x -> \y -> \z -> x * y * z
 addOneIfOdd n = case odd n of
   True -> f n
   False -> n
-  where f n = n + 1
+  where f = \n -> n + 1
