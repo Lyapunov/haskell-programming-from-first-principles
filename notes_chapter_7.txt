@@ -1,0 +1,22 @@
+First-class value: value which can be used as an argument to a
+function.
+
+Literal value is not applied on arguments, functions are.
+
+Binding vairables to values:
+ - applying parameter to an argument is binding it to a
+   type (concrete, constrainted polymorphic).
+ - applying the parameter to a value is binding it to a
+   value.
+
+Shadowing;
+   func :: Integer -> Integer
+   func x = let x = 10; y = ....
+   !!! x will be 10 !!!
+
+Anonymous functions:
+  - Lambda syntax, backslash in the front of x
+      (\x -> x * 3) :: Integer -> Integer
+    Try (\x -> x* 3) 1
+
+Page 228
