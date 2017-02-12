@@ -19,3 +19,9 @@ addOneIfOdd n = case odd n of
   where f = \n -> n + 1
 
 addFive = \x -> \y -> ( if x > y then y else x ) + 5
+
+--- mflip
+--  (/) 9 3 vs. mflip (/) 9 3
+mflip f = \x -> \y -> f y x
+
+mflip2 f x y = f y x
