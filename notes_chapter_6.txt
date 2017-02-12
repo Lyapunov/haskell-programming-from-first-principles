@@ -115,4 +115,19 @@ Concrete types imply all the typeclasses they provide
      practice
 
 
-Page 216
+Definitions:
+~~~~~~~~~~~~
+ - typeclass inheritance:
+    - when a typeclass has a superclass
+      <=> typclass requires another typeclass to be available.
+    
+    E.g. class Num a => Fractional a. Fractional instance wont work without Num
+         instance!
+ - side effects: observable actions other than compute a value.
+    E.g. printing out something to the screen, changing a value in the background ..
+ - IO type: special evaluation, bears the possibility of causing printing and
+         IO reading side effects.
+ - instance: definition how a typeclass should work for a given type
+ - derived instance: Haskell generates the instance code based on the datatype
+         definition.
+
