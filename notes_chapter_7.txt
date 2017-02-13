@@ -74,4 +74,9 @@ Function composition:
    two functions.
        take 5 . filter odd . enumFrom $ 3
 
-Page 254
+Pointfree style:
+ - E.g. > let f = take 5 . filter odd . enumFrom
+   Pointfree because we can use 'f' without writing points.
+ - actually it is rather an 'argument free' description.
+
+Page 259
