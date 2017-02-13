@@ -54,4 +54,24 @@ Higher-order functions:
    compare 5 4
    vs. (flip compare) 5 4
 
-Page 245
+GUARDS:
+ - relies on truth values to decide between two or more
+   possible results.
+ - if / then / else is an example for guards
+ - GUARD BLOCKS with pipe (it is |):
+    - the equal sign is not in the front but after each
+      case
+    - otherwise is just another name for true, in ghci:
+      > otherwise
+      True
+
+Function composition:
+ - Basic syntax of composition operator:
+     ( f . g ) x = f( g x )  [ f is b -> c, g is a -> b ]
+ - Precedence can be awkward, because applying the function
+   has higher precedence than . ( $ is recommended. )
+ - Why is it cool: it makes easy to compose more than
+   two functions.
+       take 5 . filter odd . enumFrom $ 3
+
+Page 254
