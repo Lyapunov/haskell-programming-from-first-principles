@@ -32,3 +32,10 @@ calories x
  | x < 2050 = "Okay."
  | x < 2500 = "A bit too much."
  | otherwise = "Definitely too much."
+
+
+--  palindrome
+pal :: [Char] -> Bool
+pal xs
+ | xs == reverse xs = True
+ | otherwise = False
