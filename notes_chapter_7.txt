@@ -79,4 +79,29 @@ Pointfree style:
    Pointfree because we can use 'f' without writing points.
  - actually it is rather an 'argument free' description.
 
-Page 259
+Chapter definitions
+~~~~~~~~~~~~~~~~~~~
+1. Binding, bound - what value a variable has
+   Bindings - collection of variables + functions that can
+              be referenced by name
+2. Anonymous function - not bound to an identifier
+   E.g.: \x -> \y -> x * y
+3. Currying - transforming a function of multiple arguments
+              to a series of one-arg functions through nesting!
+     In Haskell, all functions are curried by default 
+4. Pattern matching - is a way to deconstruct product and sum
+    types to get at their inhabitants.
+   (this description is focusing on >unpacking<)
+   Note: product type is
+        data Product x y = Product x y deriving (Eq, Show)
+   !!! Pattern matching is about data, not about type!!!
+5. Bottom is a non-value, which denotes the program cannot 
+   return a result. Infinite loop is an example. Or not
+   handled cases in partial functions.
+6. Higher order function: take functions as argument or
+   return function as result. Currying makes functions
+   with more argument higher order functions >technically<.
+7. Composition : is the application of a function to the
+   result of having applied another function.
+8. Pointfree is programming without mentioning arguments
+   by name.
