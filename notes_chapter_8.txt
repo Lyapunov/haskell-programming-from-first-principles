@@ -1,0 +1,8 @@
+Recursion == self-referential expressions.
+
+ -> allows to avoid explicit repetitions and decisions.
+
+Y-combinator. (?)
+
+Factorial is the classic example, see factorial.hs.
+
