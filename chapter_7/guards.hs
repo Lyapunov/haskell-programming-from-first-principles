@@ -35,7 +35,7 @@ calories x
 
 
 --  palindrome
-pal :: [Char] -> Bool
+pal :: Ord a => [a] -> Bool
 pal xs
  | xs == reverse xs = True
  | otherwise = False
