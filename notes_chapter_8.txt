@@ -6,4 +6,24 @@ Y-combinator. (?)
 
 Factorial is the classic example, see factorial.hs.
 
-Page 273
+- The looming threat of unending recursion.
+
+_|_ == bottom == computation which failed with an error
+                 or failed to terminate.
+
+In logic, _|_ is false.
+
+Examples:
+ - "let x = x in x" is a never ending computation, a bottom.
+ - "error "hello"" results an exceptions.
+ - partial functions are also bottom - pattern match without
+   covering all possible cases.
+   ( we can imagine the compiler adds the 'error' patterns. )
+
+Fibonacci numbers are another classic examples for recursion.
+
+go function == common Haskell idiom. -> defining a function
+   via the where clause can accept more arguments than the
+   top level function.
+
+Page 286
