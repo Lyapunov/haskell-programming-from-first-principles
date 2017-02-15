@@ -1,0 +1,20 @@
+The list datatype
+~~~~~~~~~~~~~~~~~
+Definitions is something like
+   data [] a = [] | a : [a]
+
+[] is the type ctor of the list and the data ctor of the empty list. 
+: is an infix operator, 'cons' (constructs(.
+
+'The list datatype is either an empty list or a single value
+with more list"
+
+Pattern match
+~~~~~~~~~~~~~
+We know we can pattern match data ctors -> [] and : !
+
+-> Consider the type Maybe for making functions complete and safe
+data Maybe a = Nothing | Just a
+
+
+Page 296
