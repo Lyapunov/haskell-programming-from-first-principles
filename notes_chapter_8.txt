@@ -26,4 +26,6 @@ go function == common Haskell idiom. -> defining a function
    via the where clause which can accept more arguments than the
    top level function.
 
-Page 289
+Definitions:
+ - Recursion: computing results trough repeated function
+   application, stopping at basecase.
