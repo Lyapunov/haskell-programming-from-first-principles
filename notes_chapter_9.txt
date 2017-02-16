@@ -98,4 +98,8 @@ map vs. fmap. fmap means 'functor map'.
   > take 1 $ map (+1) [1, undefined, 3]
   is valid.
 
+Filtering lists of values
+~~~~~~~~~~~~~~~~~~~~~~~~~
+filter is like grep in perl ... 
+
 Page 321
