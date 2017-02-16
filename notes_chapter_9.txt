@@ -103,4 +103,15 @@ Filtering lists of values
 filter is like grep in perl ... 
 "there is more than one way to skin the cat"
 
-Page 321
+Zipping
+~~~~~~~
+- zip:
+   - is combining multiple lists into a list of tuples
+   - zip stops as soon as one list runs out of items
+     => zip ... [] ... is an empty list
+   - lists can have different types
+- zipWith:
+   - applying a function on two lists in parallel
+      zipWith [1,2,3] [4,5,6]
+
+Page 324
