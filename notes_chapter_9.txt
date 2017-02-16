@@ -88,4 +88,14 @@ another thing to contemplate is that there can be problems with spine
    let z = [1,2,3] ++ undefined ++ [4,5,6]
 
 
-Page 314
+Transforming list of values
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+map vs. fmap. fmap means 'functor map'.
+
+- about evaluation. !!!map doesn't actually traverse the whole list
+  immediately, the function is applied to the values which are forced out
+  of the list one by one!!!
+  > take 1 $ map (+1) [1, undefined, 3]
+  is valid.
+
+Page 321
