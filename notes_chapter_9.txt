@@ -16,5 +16,35 @@ We know we can pattern match data ctors -> [] and : !
 -> Consider the type Maybe for making functions complete and safe
 data Maybe a = Nothing | Just a
 
+Syntactic sugar
+~~~~~~~~~~~~~~~
+[1,2,3] ++ [4] instead of ( 1 : 2 : 3 : [] ) ++ 4 : [] 
+                          ( const cells, spines )
 
-Page 296
+Using ranges
+~~~~~~~~~~~~
+They are sugars for enumFromTo, enumFromThenTo
+[1..10], and [1,3..10] == [1,3,5,7,9]
+
+works on >Enum<s:
+['a'..'z']
+['a','d'..'z']
+
+- There enumFrom and enumFromThen, they create potentially infinitely
+  long lists. That requires a type without upper limit, Integer is
+  a good candidate.
+- if second argument is lower than the first => empty list
+
+Extracting portions of lists
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+take (x items from list), drop (x items from lists),
+splitAt (x is the positionn))
+  - something less meaningful with these -> empty list
+    eg. splitAt 5 [] => ([],[])
+
+takeWhile, dropWhile -> they use conditions
+
+
+  
+
+Page 301
