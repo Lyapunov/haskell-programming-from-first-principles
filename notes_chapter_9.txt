@@ -44,7 +44,48 @@ splitAt (x is the positionn))
 
 takeWhile, dropWhile -> they use conditions
 
+List comprehensions
+~~~~~~~~~~~~~~~~~~~
+Its basically map(ping), generating a list from an existing one.
+   [ x^2 | x <- [1..10] ]
 
-  
+Adding predicates:
+   [ x^2 | x <- [1..10], rem x 2 == 0 ]
+multiple generators: (right -> left counter handling)
+   [ x*y | x <- [1..3], y <- [1..3]]
+or adding both:
+   [ x*y | x <- [1..3], y <- [1..3], rem (x+y) 2 == 0]
 
-Page 301
+With strings:
+First thing is elem, elem 'x' "xyz" == True.
+
+Spine structure of list
+~~~~~~~~~~~~~~~~~~~~~~~
+  :
+ / \
+1  :     is [1,2,...]
+  / \
+ 2   ...
+
+:sprint
+~~~~~~~
+Allows to see what is evaluated already, but can be complicated
+to use. An example (not easy to find another, polymorphism kills it,
+numbers will fail by default)):
+>let blah = enumFrom 'a' 'z'
+>take 5 blah
+>:sprint blah
+
+Spines are evaluated independently of values
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+WHNF -- weak head normal form
+     NF --- fully evaluated
+   WHNF --- evaluated only as far to reach a data ctor
+
+evaluating the spine without values: length is the example
+
+another thing to contemplate is that there can be problems with spine
+   let z = [1,2,3] ++ undefined ++ [4,5,6]
+
+
+Page 314
