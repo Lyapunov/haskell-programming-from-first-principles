@@ -101,5 +101,6 @@ map vs. fmap. fmap means 'functor map'.
 Filtering lists of values
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 filter is like grep in perl ... 
+"there is more than one way to skin the cat"
 
 Page 321
