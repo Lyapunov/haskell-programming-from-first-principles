@@ -114,4 +114,4 @@ Zipping
    - applying a function on two lists in parallel
       zipWith [1,2,3] [4,5,6]
 
-Page 324
+Page 327
