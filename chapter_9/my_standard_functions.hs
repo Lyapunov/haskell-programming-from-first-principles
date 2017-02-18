@@ -14,3 +14,8 @@ myElem1 x []     = False
 
 myElem2 :: Eq a => a -> [a] -> Bool
 myElem2 x = myAny ( (==) x )
+
+myReverse :: [a] -> [a]
+myReverse xl = go [] xl
+   where go xl [] = xl
+         go xl (y:ys) = go (y:xl) ys
