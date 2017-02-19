@@ -114,4 +114,22 @@ Zipping
    - applying a function on two lists in parallel
       zipWith [1,2,3] [4,5,6]
 
-Page 331
+Definitions:
+~~~~~~~~~~~~
+1. Product type: tuples or data ctors with more than one argument!
+                 Bool x Int means each instance will have a Bool and
+                 an Int value.
+2. Sum type: terms are terms in either type but not simultaneously.
+3. Cons : creating a list via consing a head to another list.
+          In Haskell (:) is the cons operator. It is a data ctor
+          defined in list datatype.
+4. Cons cell : is a x [a], and data ctor in the list datatype,
+          which references the list type ctor itself in the second arg.
+             data [] a = [] | a : [a]
+!!! consider:data List a = Nil | Cons a (List a)
+!!!          Cons 1 (Cons 2 (Cons 3 Nil ) )
+
+5. Spine : is the structure that glues the values together.
+           !!!not the values!!!
+
+
