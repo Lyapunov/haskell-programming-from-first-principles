@@ -39,8 +39,22 @@ squishMap2 f xl = go f xl []
 squishAgain :: [[a]] -> [a]
 squishAgain = squishMap ( \x -> x )
 
+-- maximum by
 myMaximumBy :: ( a -> a -> Ordering ) -> [a] -> a
 myMaximumBy f (x:xs) = go x xs
    where go x [] = x
-         go x (y:ys) = if f x y == LT then go y (ys) 
-                                       else go x (ys)
+         go x (y:ys) = if f y x == GT then go y (ys) 
+                                      else go x (ys)
+
+-- minimum by
+myMinimumBy :: ( a -> a -> Ordering ) -> [a] -> a
+myMinimumBy f (x:xs) = go x xs
+   where go x [] = x
+         go x (y:ys) = if f y x == LT then go y (ys) 
+                                      else go x (ys)
+
+myMaximum :: Ord a => [a] -> a
+myMaximum = myMaximumBy compare
+
+myMinimum :: Ord a => [a] -> a
+myMinimum = myMinimumBy compare
